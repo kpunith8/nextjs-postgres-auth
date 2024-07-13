@@ -10,7 +10,9 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  // Using the same env variable name as varcel has to keep both local and
+  // prod dbs in sync
+  url      = env("POSTGRES_PRISMA_URL") 
 }
 
 model Task {
