@@ -2,7 +2,7 @@
 
 - PostgresSQL v15 as vercel supports PostgresSQL v15
 - docker compose to run the postgres DB in container for local development
-- Kinde for authentication (Not implemented yet)
+- Kinde for authentication
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ npx prisma migrate dev --name first
 - app router
 - middleware
 
-## Deployment for Vercel 
+## Deployment: Vercel 
 
 Add the script `vercel-build` to package.json as,
 ```json
